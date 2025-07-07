@@ -1,0 +1,99 @@
+.accordion {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion__container {
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.accordion__container::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 1;
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.accordion__item:first-child {
+  background-color: #e2d1a6;
+}
+
+.accordion__item:nth-child(2) {
+  background-color: #ffffff;
+}
+
+.accordion__item:last-child {
+  background-color: #000000;
+  color: #ffff;
+}
+
+.accordion__button {
+  width: 88px;
+  height: 29px;
+  background-color: #ffffff;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion__arrow {
+  object-fit: cover;
+}
+
+.accordion__button:hover {
+  cursor: pointer;
+}
+
+details[open] .accordion__arrow {
+  transform: rotate(180deg);
+}
+
+.accordion__title {
+  margin: 0;
+  font-family: "Playfir Display";
+  font-size: 28px;
+  line-height: calc(30/28);
+}
+
+.accordion__subtatile {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: calc(24.99/16);
+}
+
+.accordion__signature {
+  margin: 0;
+  margin-left: auto;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: calc(24.99/18);
+}

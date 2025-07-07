@@ -1,0 +1,10 @@
+.logo {
+    max-width: 283px;
+    margin: 24px;
+}
+
+.logo__image {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}

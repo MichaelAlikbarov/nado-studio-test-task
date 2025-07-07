@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Test Nado Studio</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+    <script src="./scripts/modal.js" defer></script>
+    <script src="./scripts/menuDropDown.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="logo">
+        <img src="./images/logo.png" class="logo__image" alt="logo" />
+      </div>
+      <div class="header__container">
+        <button class="header__button" id="button-modal-open">
+          AREA RISERVATA
+          <img src="./images/buttonlock.png" class="header__button-icon" alt="изображение замочка" />
+        </button>
+        <nav class="menu">
+          <ul class="menu__main">
+            <li class="menu__item menu__item_active">
+              <a href="#" class="menu__link">
+                HOME
+              </a>
+            </li>
+            <li class="menu__item menu-drop-down">
+              <button
+                class="menu-drop-down__button"
+                aria-expanded="false"
+                aria-controls="list"
+              >
+                AZIENDA
+              </button>
+              <ul class="menu-drop-down__list" id="list" aria-hidden="true">
+                <li class="menu-drop-down__item">
+                  <a href="#" class="menu-drop-down__link" tabindex="-1">STORIA</a>
+                </li>
+                <li class="menu-drop-down__item">
+                  <a href="#" class="menu-drop-down__link" tabindex="-1">MM DESIGN</a>
+                </li>
+                <li class="menu-drop-down__item">
+                  <a href="#" class="menu-drop-down__link" tabindex="-1">DESIGNER</a>
+                </li>
+                <li class="menu-drop-down__item">
+                  <a href="#" class="menu-drop-down__link" tabindex="-1">CERTIFICAZIONI</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">COLLEZIONI</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">NEWS</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">CONTATTI</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="slider">
+        <div class="slider__slides" aria-live="polite">
+          <div class="slider__slide" role="group" aria-labelledby="item-1-label" id="carousel-item-1">
+            <img
+              src="./images/slide1.jpeg"
+              class="slider__image"
+              alt="дизайн кухни"
+            />
+          </div>
+          <div class="slider__slide" role="group" aria-labelledby="item-2-label" id="carousel-item-2">
+            <img
+              src="./images/slide.png"
+              class="slider__image"
+              alt="дизайн кухни"
+            />
+            <div class="slider__descripton">
+              <h2 class="slider__title">Lampadari contemporanei</h2>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            </div>
+          </div>
+          <div class="slider__slide" role="group" aria-labelledby="item-3-label" id="carousel-item-3">
+            <img
+              src=""
+              class="slider__image"
+              alt="картинка с дизайном кухни"
+            />
+          </div>
+          <div class="slider__controls" role="group" aria-label="управление слайдами">
+            <button class="slider__button slider__radio-button" type="button" aria-current="true" aria-label="показать 1 из 3"></button>
+            <button class="slider__button slider__radio-button" type="button" aria-label="показать 2 из 3"></button>
+            <button class="slider__button slider__radio-button" type="button" aria-label="показать 3 из 3"></button>
+        </div>
+        </div>
+      </section>
+      <section class="accordion">
+        <details class="accordion__container">
+          <summary class="accordion__button">
+            <img class="accordion__arrow" src="./images/arrowbtn.png" alt="arrow" />
+          </summary>
+          <ul class="accordion__list">
+            <li class="accordion__item">
+              <h2 class="accordion__title">Titolo Box</h2>
+              <p class="accordion__subtatile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+              <span class="accordion__signature">Approfondisci</span>
+            </li>
+            <li class="accordion__item">
+              <h2 class="accordion__title">Titolo Box</h2>
+              <p class="accordion__subtatile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+              <span class="accordion__signature">Approfondisci</span>
+            </li>
+            <li class="accordion__item">
+              <h2 class="accordion__title">Titolo Box</h2>
+              <p class="accordion__subtatile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+              <span class="accordion__signature">Approfondisci</span>
+            </li>
+          </ul>
+        </details>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__column">
+          <h3 class="footer__title">LAMPADARI MADE IN ITALY</h3>
+          <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="footer__column">
+          <h3>LAMPADARI ARTIGIANALI</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="footer__column">
+          <h3>45 ANNI DI ESPERIENZA</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+        <div class="footer__column">
+          <h3>NEWSLETTER</h3>
+          <form class="footer__form">
+            <input type="text" placeholder="Nome e Cognome" />
+            <input type="email" placeholder="Email" />
+            <label class="footer__checkbox">
+              <input type="checkbox" />
+              <span>Acconsento al trattamento dei dati*</span>
+            </label>
+            <button type="submit">ISCRIVITI</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__info">
+          <p>© MMLAMPADARI srl &nbsp; Via Feltirina 00 &nbsp; 31111 Pederobba (TV) &nbsp; 0423.123456 &nbsp; info@mmlampadari.imm &nbsp; P.IVA 04123456789</p>
+        </div>
+        <div class="footer__socials">
+          <a href="#"><img src="./images/facebook.png" alt="Facebook" /></a>
+          <a href="#"><img src="./images/instagramm.png" alt="Instagram" /></a>
+          <a href="#"><img src="./images/pinteresicon.png" alt="Pinterest" /></a>
+        </div>
+        <div class="footer__langs">
+          <a href="#">ITA</a>
+          <a href="#">ENG</a>
+          <a href="#">DEU</a>
+          <a href="#">RUS</a>
+        </div>
+      </div>
+    </footer>
+    <section class="modal" id="modal">
+      <div class="modal__container">
+        <button class="modal__close">
+          <img src="./images/closeicon.png" alt="кнопка закрыть модальное окно" />
+        </button>
+        <h2 class="modal__title">AREA RISERVATA</h2>
+        <div class="form__columns">
+          <form class="form form_login">
+              <h3 class="form__title">ACCEDI</h3>
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="form__input"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form__input"
+                required
+              />
+              <button class="form__button form__button_light" type="submit">
+                  ACCEDI
+              </button>
+              <a href="#" class="form__link">Password dimenticata</a>
+          </form>
+          <form class="form form_register">
+              <h3 class="form__title">REGISTRATI</h3>
+              <input
+                type="text"
+                placeholder="Nome"
+                class="form__input"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Cognome"
+                class="form__input"
+                required
+              />
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="form__input"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form__input"
+                required
+              />
+              <label class="form__checkbox">
+                <input type="checkbox" required />
+                <span>Acconsento al trattamento dei dati</span>
+              </label>
+              <button class="form__button form__button_light" type="submit">
+                ISCRIVITI
+              </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

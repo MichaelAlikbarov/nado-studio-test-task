@@ -1,0 +1,44 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(245, 244, 246, 0.7);
+}
+
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 595px;
+  background-color: #353436;
+  z-index: 1;
+}
+
+.modal__close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal_opened {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

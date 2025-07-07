@@ -1,0 +1,27 @@
+.menu {
+    margin: 0;
+}
+
+.menu__main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu__item {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.menu__link:hover {
+  opacity: 0.8;
+  color: var(--color-active);
+}
+
+.menu__item_active {
+    color: var(--color-active);
+}

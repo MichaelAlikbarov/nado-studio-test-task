@@ -1,0 +1,8 @@
+.page {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    max-width: 1240px;
+    min-height: 100vh;
+    margin: auto;
+}

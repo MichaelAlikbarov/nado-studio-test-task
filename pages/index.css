@@ -1,0 +1,16 @@
+@import "../vendor/normalize.css";
+@import "../fonts/fonts.css";
+@import "./variables.css";
+@import "./global.css";
+
+@import "../blocks/page/page.css";
+@import "../blocks/header/header.css";
+@import "../blocks//nav/menu.css";
+@import "../blocks/menu-drop-down/menu-drop-down.css";
+@import "../blocks/logo/logo.css";
+@import "../blocks//main/main.css";
+@import "../blocks/slider/slider.css";
+@import "../blocks/accordion/accordion.css";
+@import "../blocks//footer/footer.css";
+@import "../blocks/form/form.css";
+@import "../blocks/modal/modal.css";

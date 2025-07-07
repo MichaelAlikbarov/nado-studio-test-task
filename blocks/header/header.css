@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding-right: 24px;
+}
+
+.header__button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "OpenSans";
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.714;
+    text-transform: uppercase;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.header__button-icon {
+    /* width: 9px;
+    height: 13px; */
+    padding-bottom: 7px;
+}
